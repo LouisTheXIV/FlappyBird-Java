@@ -12,7 +12,7 @@ public class Score extends Actor
 {
     static int score = 0;
     public Score(){
-        setImage(new GreenfootImage("Scor: 0", 15, Color.BLACK, null));
+        setImage(new GreenfootImage("Score: 0", 15, Color.BLACK, null));
     }
     
     public static void increaseScore(){
@@ -22,7 +22,7 @@ public class Score extends Actor
     public void act() 
     {
         setImage(new GreenfootImage("Scor: " + score, 15, Color.BLACK, null));
-        if(score==1){
+        if(score==10){
         Greenfoot.setWorld(new EndLevel());
         }
     }   
